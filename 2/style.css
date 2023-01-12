@@ -1,0 +1,73 @@
+body{
+    background-image:linear-gradient(60deg,aqua,rgb(153, 88, 179),rgb(202, 11, 186));
+    overflow: hidden;
+}
+
+.center{
+    background-color: white;
+    border: 12px solid white;
+    border-radius: 12px;
+    margin-top:12%;
+    margin-right:22%;
+    margin-left: 35%;
+    margin-bottom: 12%;
+    width:350px;
+    /* position:-ms-page; */
+
+}
+
+.center h1{
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.center form{
+    padding:10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+
+}
+.txt_field{
+    padding: 15px;
+    border-bottom: 2px solid grey;
+}
+.txt_field label{
+    font-size:medium;
+    /* font-variant:small-caps; */
+    font-weight:bold;
+}
+.txt_field input{
+    width:90%;
+    font-size: large;
+    padding:12px;
+    border: 1px solid blue;
+}
+
+.forget{
+    padding:10px;
+    text-align: right;
+    font-size:large;
+}
+.login{
+    text-align: center;
+}
+.login input{
+    width:100%;
+    height: 40px;
+    background-image:linear-gradient(120deg,aqua,rgb(153, 88, 179),rgb(202, 11, 186)) ;
+    padding-left: 20px;
+    font-size:20px;
+    font-weight: bold;
+    border: hidden;
+    color: white;
+    border-radius: 20px;
+
+    
+} 
+.signup{
+    text-align: center;
+    font-style:italic;
+    padding: 20px;
+
+}
