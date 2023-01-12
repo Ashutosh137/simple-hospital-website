@@ -9,32 +9,64 @@ body {
     color: black;
 }
 
-a{
-    text-decoration: none;
+
+input {
+    text-transform: capitalize;
+    border-radius: 20px;
+    margin: 20px;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: 500;
+    padding: 15px;
 }
 
+input:hover {
+    background-color: gold;
+    cursor: pointer;
+    color: black;
+    transition: all 1.4s linear;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: capitalize;
+
+}
+
+a:hover {
+    border-bottom: 2px solid black;
+    transition: all 1.4s linear;
+
+}
+
+h1 {
+    text-transform: capitalize;
+    font-size: x-large;
+    font-weight: bold;
+}
 
 /* header */
 
-.login{
-    margin-left: 90vw;
+.login {
     position: absolute;
+    margin-left: 88vw;
 }
-.login input{
-    cursor: pointer;
-    font-size: larger;
-    font-weight: 800;
-    border-radius: 20px;
-    background-color: rgb(249, 250, 250);
-    padding:5px;
+
+.login input {
+    padding: 5px;
     width: 100px;
 }
+
 .hospital h1 {
-    background-color: rgb(197, 241, 227) transparent;
-    margin: 20vw;
-    padding: 5px;
-    margin-top: 50vh;
     position: absolute;
+    background-color: rgb(197, 241, 227) transparent;
+    margin: 8vw;
+    padding: 5px;
+    margin-top: 8vh;
     text-transform: capitalize;
     font-family: 'Courier New', Courier, monospace;
     z-index: 1;
@@ -44,7 +76,6 @@ a{
     margin: 30px;
     padding-top: 1vh;
     display: flex;
-    /* flex-basis: 200px; */
     flex-direction: row;
 }
 
@@ -79,32 +110,35 @@ nav ul li {
 nav ul li a {
     font-size: x-large;
     font-weight: 800;
-    text-transform: capitalize;
-    text-decoration: none;
 }
 
 /* sections */
 
 .section {
-    overflow: scroll;
     display: flex;
     flex-direction: row;
     position: relative;
     padding: 5%;
 }
 
+#home {
+    padding: 20px;
+    margin: 20px;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+
 #home img {
-    border-bottom: 5px solid black;
-    border-radius: 2%;
     margin-right: 20px;
     width: 100%;
+    border-radius: 20px;
     height: 100%;
 }
 
 #home img:hover {
-    transition: all 1.2s linear;
-    box-shadow: black 2px 2px 10px 10px;
-    border-bottom: 5px solid black;
+    transition: all 0.2s linear;
+    box-shadow: black 2px 2px 20px 10px;
     border-radius: 2%;
     margin-right: 20px;
     width: 101%;
@@ -112,27 +146,21 @@ nav ul li a {
 }
 
 .about {
+    margin: 20px;
     text-align: center;
-    font-weight: 500;
 }
 
+.about h1 {
+    text-transform: capitalize;
+    font-size: xx-large;
+    padding-bottom: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.about p {
+    font-weight: 400;
+    font-size: larger;
+    padding: 20px;
+}
 
 #gallary img {
     box-shadow: azure 2px 2px 2px 2px;
@@ -142,14 +170,38 @@ nav ul li a {
     height: 50%;
 }
 
+#contact {
+    color: rgb(0, 0, 0);
+    margin: 30px;
+    text-align: center;
+}
 
+.contact h1 {
+    text-transform: capitalize;
+    padding: 20px;
+    font-size: xx-large;
+}
 
-.footar{
+.contact form {
+    border-radius: 2px solid white;
+    background-color: azure;
+    box-sizing: border-box;
+}
+
+.contact form input {
+    font-weight: 500;
+    padding: 10px;
+    font-size: larger;
+    width: 15vw;
+}
+
+.footar {
     border: 40px solid azure;
     border-radius: 50px;
     background-color: black;
 }
-.footer-contact{
+
+.footer-contact {
     margin: 20px;
     margin-bottom: 0px;
     display: flex;
@@ -158,8 +210,8 @@ nav ul li a {
 }
 
 
-.footer{
-    align-items:center;
+.footer {
+    align-items: center;
     display: flex;
     flex-direction: column;
     flex-basis: 30vw;
@@ -169,21 +221,18 @@ nav ul li a {
     padding-bottom: 50px;
     margin-bottom: 70px;
 }
-.footer h2{
-     font-size: x-large;
-     border-bottom: 2px solid rgb(255, 255, 255);
-     text-transform: capitalize;
-     margin-top: 15px;
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     font-weight: 800;
+
+.footer h2 {
+    font-size: x-large;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    text-transform: capitalize;
+    margin-top: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
 }
 
-.footer a,.footer label{
-    text-transform: capitalize;
+.footer a,
+.footer label {
     color: aliceblue;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 20px;
-    font-size: medium;
-    font-weight: 500;
-    padding: 2px;
 }
